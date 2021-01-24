@@ -1,5 +1,8 @@
 version: '3.2'
 
+volumes:
+  mssqldata: {}
+
 services:
   db:
     build: .
@@ -12,4 +15,6 @@ services:
       MSSQL_PASSWORD: Str0NgPasswOOrd
     ports:
       - "1433:1433"
+    volumes:
+      - mssqldata:/var/opt/mssql
     container_name: mssqldev
