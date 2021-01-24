@@ -3,13 +3,13 @@ version: '3.2'
 services:
   db:
     build: .
-    image: mcmoe/mssqldocker:v2017.CU20.0
+    image: mabuelhagag/mssqldocker:2019-CU8-ubuntu-16.04
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: 2astazeY
       MSSQL_DB: dev
       MSSQL_USER: Kobeissi
-      MSSQL_PASSWORD: 7ellowEl7akey
+      MSSQL_PASSWORD: Str0NgPasswOOrd
     ports:
       - "1433:1433"
     container_name: mssqldev
