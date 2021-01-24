@@ -1,12 +1,14 @@
 # Overview
 
+## This ia fork of: https://github.com/mcmoe/mssqldocker
+
 * Build a docker image based on mcr.microsoft.com/mssql/server
 * Configure the database with a database and user
 
 # How to Run
 ## Clone this repo
 ```
-git clone https://github.com/mcmoe/mssqldocker.git
+git clone https://github.com/mabuelhagag/mssqldocker.git
 ```
 
 ## From DockerHub
@@ -79,7 +81,7 @@ In addition, we will need to pass the following env variables `$MSSQL_DB` `$MSSQ
 They will be used to configure the server with a new database and a user with admin permissions.
 
 ```
-FROM mcr.microsoft.com/mssql/server:2017-CU20-ubuntu-16.04
+FROM mcr.microsoft.com/mssql/server:2019-CU8-ubuntu-16.04
 ```
 
 This RUN command creates a new directory _inside_ the container at /usr/config and then sets the working directory to that directory.
